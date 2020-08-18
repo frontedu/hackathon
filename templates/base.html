@@ -1,0 +1,32 @@
+{% load static %}
+{% load bootstrap4 %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}" >
+    <style type="text/css">
+    </style>
+    <title>{% block title %} {% endblock %}</title>
+    <meta charset="UTF-8">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="{% url 'home' %}">Conteudo da Home</a>
+    <a class="navbar-brand" href="{% url 'teste' %}">Conteudo teste</a>
+</nav>
+<h1>Esse é o arquivo do tema</h1>
+</br>
+<H2>AQUI VAI O CONTEUDO POR CIMA DO TEMA : </H2>
+<!--Aqui vai o design da pagina e o conteudo bruto será apresentado em home.html-->
+    {% block main %}
+
+    {% endblock %}
+
+</body>
+</html>
