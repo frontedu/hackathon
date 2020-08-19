@@ -24,7 +24,7 @@ from clientes import urls as cl
 
 urlpatterns = [
 
-    path('core/',include(home_urls)),
+    path('',include(home_urls)),
     path('clientes/',include(cl)),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
