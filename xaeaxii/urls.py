@@ -19,12 +19,12 @@ from django.urls import path
 from django.conf.urls import include
 from django.conf.urls.static import static
 '''importando homepage'''
-from core import urls as home_urls
-from clientes import urls as cl
+
+
 
 urlpatterns = [
 
-    path('',include(home_urls)),
-    path('clientes/',include(cl)),
+    path('',include('core.urls')),
+    path('clientes/',include('django.contrib.auth.urls')),
     path('admin/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

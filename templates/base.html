@@ -19,11 +19,17 @@
     <a class="navbar-brand" href="{% url 'teste' %}">Conteudo teste</a>
 </nav>-->
 <div id="navigations">
+    {% if user.is_authenticated %}
     <div>
         <img class="logo" src="{% static 'images/OojJ0zz.png' %}"  alt="MEIAJUDA">
     </div>
     <input type="text" style="top: 148px; left: 630px; width: 661px; height: 80px;" placeholder ="Pesquisar pelo serviço ou local">
     <a href="#"><button class="meiajuda">Sou MEI</button></a>
+    {% else  %}
+        <a class="btn btn-success" href="/clientes/login">Entrar</a>
+    {% endif %}
+    {% if user.is_authenticated %}
+        <a class="btn btn-danger" href="/clientes/logout">SAIR</a>
     <nav>
         <ul class="nav_links">
             <li>
@@ -70,13 +76,15 @@
             </li>
         </ul>
     </nav>
+    {% endif %}
 </div>
 </br>
 <H2></H2>
-<!--Aqui vai o design da pagina e o conteudo bruto será apresentado em home.html
+<!--Aqui vai o design da pagina e o conteudo bruto será apresentado em home.html-->
     {% block main %}
 
     {% endblock %}
--->
+
+
 </body>
 </html>
