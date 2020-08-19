@@ -1,0 +1,156 @@
+
+@font-face {
+    font-family: 'SF UI Display Ultralight';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Ultralight'), url('sf-ui-display-ultralight-58646b19bf205.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Thin';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Thin'), url('sf-ui-display-thin-58646e9b26e8b.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Light'), url('sf-ui-display-light-58646b33e0551.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('sf-ui-display-medium-58646be638f96.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Semibold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Semibold'), url('sf-ui-display-semibold-58646eddcae92.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Bold'), url('sf-ui-display-bold-58646a511e3d9.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Heavy'), url('sf-ui-display-heavy-586470160b9e5.woff') format('woff');
+    }
+    
+    
+    @font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+    }
+
+body{
+    margin: 0;
+    padding: 35px 0;
+    font-family: 'SF UI Display Semibold', sans-serif;
+}
+    
+.meiajuda{
+    color: #FFFFFF;
+    top: 46px;
+    position: absolute;
+    left: 1623px;
+    height: 66px;
+    width: 163px;
+    background: transparent linear-gradient(287deg, #FFBF69 0%, #FF9F1C 100%) 0% 0% no-repeat padding-box;
+    border-radius: 15px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 900 24px/29px SF Pro Display;
+    font-family: 'SF UI Display Semibold', sans-serif;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+*{
+    background-color: #f2f7f4;
+}
+.logo{
+    padding-bottom: 35px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+ul li{
+    list-style: none;
+}
+.fodase{
+    background: #CBF3F0 0% 0% no-repeat padding-box;
+    border: none;
+    width: 152px;
+    height: 50px;
+    margin-top: 10px;
+    text-align: center;
+    font: normal normal 600 32px/38px SF Pro Display;
+    font-family: 'SF UI Display Semibold', sans-serif;
+    letter-spacing: 0px;
+    color: #2EC4B6;
+    opacity: 1;
+    cursor: pointer;
+    transition: .2s;
+    opacity: 1;
+}
+.fodase:hover{
+    background: #2EC4B6 0% 0% no-repeat padding-box;
+    border-radius: 44px;
+    opacity: 1;
+    color: white;
+}
+
+button{
+    background: #000000 0% 0% no-repeat padding-box;
+    border: 8px solid #FFF;
+    border-radius: 48px;
+    opacity: 1;
+    color: white;
+}
+input{
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    font: normal normal normal 32px/43px Roboto;
+    letter-spacing: 0px;
+    color: #2EC4B6;
+    opacity: 1;
+    border: 2px solid #2EC4B6;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+::placeholder{
+    text-align: left;
+    font: normal normal normal 32px/43px Roboto;
+    letter-spacing: 0px;
+    color: #2EC4B6;
+    opacity: 1;
+    top: 165px;
+    left: 711px;
+    width: 441px;
+    height: 43px;
+}

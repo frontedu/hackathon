@@ -24,10 +24,10 @@ def login_submit(request):
         user = authenticate(username=username,password=password)
         if user is not None:
             login(request,user)
-            return redirect('login')
+            return redirect('home')
         else:
             messages.error(request,'Usuarios e senha inválido')
-    return redirect('login')
+    return redirect('home')
 
 
 
