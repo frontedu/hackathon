@@ -27,7 +27,8 @@
     <a href="#"><button class="meiajuda">Sou MEI</button></a>
     {% else  %}
         <a class="btn btn-success" href="/clientes/login">Entrar</a>
-        <a class="btn btn-success" href="{% url 'signup' %}">Registre-ser</a>
+
+        <a class="btn btn-success" href="{% url 'signup' %}">signup</a>
     {% endif %}
     {% if user.is_authenticated %}
         <a class="btn btn-danger" href="/clientes/logout">SAIR</a>

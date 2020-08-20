@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load bootstrap %}
+
+{% block main %}
+{% autoescape off %}
+Hi {{ user.username }},
+    Por favor click no link para confirmar seu registro:
+    http://{{ domain }}{% url 'activate' uidb64=uid token=token %}
+{% endautoescape %}
+{% endblock %}
