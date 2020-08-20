@@ -1,4 +1,4 @@
-
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render,redirect
 from .forms import EmpresaForm
 def home(request):
@@ -9,6 +9,7 @@ def home(request):
 def teste(resquest):
     return render(resquest,'teste/teste.html')
 
+@login_required
 def novaEmpresa(request):
     form = EmpresaForm(request.POST or None,request.FILES or None)
     if form.is_valid():

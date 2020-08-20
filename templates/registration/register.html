@@ -5,7 +5,8 @@
 {%  block main %}
     <form method="POST">
         {% csrf_token %}
-        <input type="hidden" name="next" value="next">
+        <input type="hidden" name="next" value="{{ next }}">
+
          {{ form|bootstrap }}
         <button type="submit" class="btn btn-primary btn-block">
             cadastrar
