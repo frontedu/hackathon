@@ -12,7 +12,7 @@ Signup
             <div class="card auth-card">
                 <div class="card-tittle text-center">
                 <h4 class="card-title text-center">Login</h4>
-                    <form method="POST">
+                    <form class="form-group now" method="POST">
                     {% csrf_token %}
                     {% for field in form %}
                     <p>
