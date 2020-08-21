@@ -8643,7 +8643,7 @@ button.bg-light:focus
 
 .bg-dark
 {
-    background-color: #171347 !important;
+    background-color: #2EC4B6 !important;
 }
 
 a.bg-dark:hover,
@@ -21883,7 +21883,7 @@ svg
 
 .footer-dark
 {
-    color: #a0aec0; 
+    color: #FFFFFF; 
     background-color: #273444;
 }
 .footer-dark .heading
@@ -21894,7 +21894,7 @@ svg
 .footer-dark .list-unstyled li a,
 .footer-dark .footer-link
 {
-    color: #a0aec0;
+    color: #ffffff;
 }
 .footer-dark .nav .nav-item .nav-link:hover,
 .footer-dark .list-unstyled li a:hover,
